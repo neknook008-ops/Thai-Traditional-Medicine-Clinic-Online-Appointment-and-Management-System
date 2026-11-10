@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ed">
+    <meta name="description" content="ระบบนัดหมายและจัดการคลินิกการแพทย์แผนไทย ศูนย์การแพทย์มหาวิทยาลัยวลัยลักษณ์">
+    <title>คลินิกการแพทย์แผนไทย | ศูนย์การแพทย์มหาวิทยาลัยวลัยลักษณ์</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js?v=2" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="หน้าหลัก">
+        <span class="brand-mark" aria-hidden="true">ว</span>
+        <span><strong>คลินิกการแพทย์แผนไทย</strong><small>ศูนย์การแพทย์มหาวิทยาลัยวลัยลักษณ์</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="เมนูหลัก">
+        <a href="#home" data-route="home">หน้าแรก</a>
+        <a href="#services" data-route="services">บริการ</a>
+        <a href="#booking" data-route="booking">นัดหมาย</a>
+        <a href="#lookup" data-route="lookup">ตรวจสอบนัด</a>
+        <a href="#contact" data-route="contact">ติดต่อเรา</a>
+      </nav>
+      <button class="button button-outline header-admin" data-action="admin">สำหรับเจ้าหน้าที่ <span aria-hidden="true">↗</span></button>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true">ว</span><span><strong>ดูแลสุขภาพอย่างเข้าใจ</strong><small>คลินิกการแพทย์แผนไทย · ศูนย์การแพทย์มหาวิทยาลัยวลัยลักษณ์</small></span></div>
+      <p>ข้อมูลส่วนบุคคลของท่านใช้เพื่อการนัดหมายและการให้บริการทางการแพทย์เท่านั้น</p>
+      <span>© <span id="year"></span> ศูนย์การแพทย์มหาวิทยาลัยวลัยลักษณ์</span>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <dialog id="dialog" class="dialog"></dialog>
+  </body>
+</html>
